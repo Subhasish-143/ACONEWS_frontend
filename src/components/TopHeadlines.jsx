@@ -20,7 +20,7 @@ function TopHeadlines() {
     
     const categoryParam = params.category ? `&category=${params.category}` : "";
 
-    fetch(`http://localhost:3000/top-headlines?lang=en&page=${currentPage}&max=${pageSize}${categoryParam}`)
+    fetch(`https://aconews-u4xs.onrender.com/top-headlines?lang=en&page=${currentPage}&max=${pageSize}${categoryParam}`)
       .then(response => {
         if (response.ok) {
           return response.json();
