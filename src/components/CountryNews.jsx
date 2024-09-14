@@ -20,7 +20,7 @@ function CountryNews() {
     setError(null);
     
     // Fetch from your Node.js backend
-    fetch(`http://localhost:3000/country?country=${iso}&page=${currentPage}&max=${pageSize}`)
+    fetch(`https://aconews-u4xs.onrender.com/country?country=${iso}&page=${currentPage}&max=${pageSize}`)
       .then(response => {
         if (response.ok) {
           return response.json();
