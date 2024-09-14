@@ -16,7 +16,7 @@ const articlesPerPage = 5; // Number of articles to display per page
   useEffect(() => {
     setIsLoading(true);
     setError(null);
-    fetch(`http://localhost:3000/all-news?page=${currentPage}&max=${pageSize}`)
+    fetch(`https://aconews-u4xs.onrender.com/all-news?page=${currentPage}&max=${pageSize}`)
       .then(response => {
         if (response.ok) {
           return response.json();
