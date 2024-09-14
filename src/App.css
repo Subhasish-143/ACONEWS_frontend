@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pagination-btn:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
