@@ -20,7 +20,7 @@ function Search() {
     setIsLoading(true);
     setError(null);
 
-    fetch(`http://localhost:3000/search?search=${query}&page=${currentPage}&max=${pageSize}`)
+    fetch(`https://aconews-u4xs.onrender.com/search?search=${query}&page=${currentPage}&max=${pageSize}`)
       .then(response => {
         if (response.ok) {
           return response.json();
